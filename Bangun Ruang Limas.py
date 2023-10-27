@@ -1,24 +1,33 @@
-import math
-
-def luas_permukaan_balok(panjang, lebar, tinggi):
-    return 2 * ((panjang * lebar) + (panjang * tinggi) + (lebar * tinggi))
-
-def diagonal_ruang(panjang, lebar, tinggi):
-    return math.sqrt(panjang**2 + lebar**2 + tinggi**2)
-
-def keliling_balok(panjang, lebar, tinggi):
-    return 4 * (panjang + lebar + tinggi)
-
-def volume_balok(panjang, lebar, tinggi):
-    return panjang * lebar * tinggi
-
-# Input dari pengguna
-panjang = float(input("Masukkan Panjang Balok: "))
-lebar = float(input("Masukkan Lebar Balok: "))
-tinggi = float(input("Masukkan Tinggi Balok: "))
-
-# Hitung dan cetak hasil
-print(f"Luas Permukaan Balok: {luas_permukaan_balok(panjang, lebar, tinggi)}")
-print(f"Diagonal Ruang: {diagonal_ruang(panjang, lebar, tinggi)}")
-print(f"Keliling Balok: {keliling_balok(panjang, lebar, tinggi)}")
-print(f"Volume Balok: {volume_balok(panjang, lebar, tinggi)}")
+print("Aplikasi Menghitung Luas dan Volume Limas Segitiga")
+""""
+Nama  : Isma Elan Maulani
+NIM   : 220511112
+Kelas : TI22B
+PBO   : Tugas Pertemuan 1
+Keterangan:
+a = Luas alas
+t = Tinggi
+T = Tinggi Limas
+LS = Luas Segitiga
+"""
+# Atur Nilai:
+LS_1 = 1
+LS_2 = 9
+LS_3 = 4
+LS_4 = 5
+a = 6
+t = 7
+T = 8
+# Rumus
+luas = LS_1 + LS_2 + LS_3 + LS_4
+volume = 1/6 * a * t * T
+# output
+print("Luas Segitiga 1:", LS_1)
+print("Luas Segitiga 2:", LS_2)
+print("Luas Segitiga 3:", LS_3)
+print("Luas Segitiga 4:", LS_4)
+print("Luas Alas:", a)
+print("Tinggi:", t)
+print("Tinggi Limas:", T)
+print("Luas Limas Segitiga:", luas)
+print("Volume Limas Segitiga:", volume)
