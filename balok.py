@@ -1,6 +1,6 @@
 print("Program menghitung luas dan keliling balok")
 """
-Programmer:
+Programmer: Isma Elan Maulani
 pertemuan:1
 Tanggal : 22 Oktober 2023
 """
